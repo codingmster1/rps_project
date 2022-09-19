@@ -73,3 +73,12 @@ body
     
     
 }
+
+#computer-label
+{
+    position:absolute; 
+    top:30px;
+    left:165px;
+    
+    
+}
