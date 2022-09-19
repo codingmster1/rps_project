@@ -3,7 +3,7 @@
 body
 {
     margin: 0;
-    background-color:rgb(215, 238, 245);
+    background-color:rgb(112, 194, 221);
 }
 
 *
@@ -11,15 +11,27 @@ body
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:larger;
     font-weight:lighter;
-    
+    font-size:38px;
     
     
 }
 
+.choices
+{
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content:center;
+    justify-content:space-around;
+}
 
+.score-board
+{
+
+}
 
 
 .header 
