@@ -3,7 +3,7 @@
 body
 {
     margin: 0;
-    background-color:rgb(112, 194, 221);
+    background-color:rgb(130, 209, 235);
 }
 
 *
@@ -14,7 +14,7 @@ body
     font-family:cursive;
     font-size:larger;
     font-weight:lighter;
-    font-size:38px;
+    
     
     
 }
@@ -81,4 +81,11 @@ body
     left:165px;
     
     
+}
+
+
+.result
+{
+    font-size:45px;
+    color:white;
 }
