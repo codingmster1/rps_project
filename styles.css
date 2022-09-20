@@ -93,6 +93,7 @@ body
 
 .result > p
 {
+    font-weight:bold;
     text-align:center;
     padding: 10px 25px;
     margin: 20px auto;
