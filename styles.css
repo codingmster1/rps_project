@@ -3,7 +3,7 @@
 body
 {
     margin: 0;
-    background-color:rgb(109, 199, 230);
+    background-color:rgb(101, 186, 214);
 }
 
 *
@@ -26,6 +26,11 @@ body
     width:100%;
     justify-content:center;
     justify-content:space-around;
+}
+
+.choice:hover
+{
+    cursor:pointer;
 }
 
 .score-board
