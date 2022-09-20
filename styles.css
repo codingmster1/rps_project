@@ -31,6 +31,7 @@ body
 .choice:hover
 {
     cursor:pointer;
+    background:#B2FFFF;
 }
 
 .score-board
