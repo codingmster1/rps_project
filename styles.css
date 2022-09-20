@@ -90,3 +90,9 @@ body
     font-size:45px;
     color:white;
 }
+
+.result > p
+{
+    text-align:center;
+    padding: 15px 30px;
+}
