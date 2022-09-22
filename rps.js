@@ -8,18 +8,20 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
-
+function main()
+{
 rock_div.addEventListener('click', function()
 {
-  console.log("you clicked on rock");
+  game("r");
 })
 
 paper_div.addEventListener('click', function()
 {
-  console.log("you clicked on paper");
+  game("p");
 })
 
 scissors_div.addEventListener('click', function()
 {
-  console.log("you clicked on scissors");
+  game("s");
 })
+}
