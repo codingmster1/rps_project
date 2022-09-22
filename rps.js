@@ -24,7 +24,7 @@ function game(userChoice){
     case "rs":
     case "pr":
     case "sp":
-      console.log("User Wins!");
+      console.log("You Win!");
       break;
 
       case "rp":
