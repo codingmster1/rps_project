@@ -18,7 +18,7 @@ function getComputerChoice() {
 getComputerChoice();
 
 function game(userChoice){
-  console.log("poop" + userChoice);
+  
 }                         
 
 function main()
