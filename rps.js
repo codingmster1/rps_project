@@ -20,6 +20,11 @@ console.log(getComputerChoice());
 function game(userChoice){
   const computerChoice = getComputerChoice();
   console.log(computerChoice);
+  switch(userChoice + computerChoice){
+    case "rs":
+    case "pr":
+    case "sp":
+  }
 }             
 
 
