@@ -7,9 +7,13 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
-function game(userChoice){
+
+function getComputerChoice(){
   
 }
+function game(userChoice){
+  console.log("poop" + userChoice);
+}                         
 
 function main()
 {
