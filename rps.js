@@ -8,9 +8,15 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
-function getComputerChoice(){
-  
+function getComputerChoice() {
+
+  const choices = ['r', 'p', 's'];
+  console.log(Math.random());
+
 }
+
+getComputerChoice();
+
 function game(userChoice){
   console.log("poop" + userChoice);
 }                         
