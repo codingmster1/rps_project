@@ -12,10 +12,10 @@ function getComputerChoice() {
 
   const choices = ['r', 'p', 's'];
   const randomNumber = Math.floor(Math.random() * 3);
-
+  return choices[randomNumber];
 }
 
-getComputerChoice();
+console.log(getComputerChoice());
 
 function game(userChoice){
   
