@@ -31,6 +31,12 @@ function game(userChoice){
       case "ps":
       case "sr":
         console.log("Computer Wins!");
+        break;
+      case "rr":
+      case "pp":
+      case "ss":
+        console.log("It's a draw!");
+        break;
   }
 }             
 
