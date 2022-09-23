@@ -15,16 +15,16 @@ function getComputerChoice() {
   return choices[randomNumber];
 }
 
-function win() {
+function win(user, computer) {
   userScore++;
   userScore_span.innerHTML = userScore;
-  computerScore_span = computerScore;
+  computerScore_span.innerHTML = computerScore;
 }
 
 function lose() {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
-  computerScore_span = computerScore;
+  computerScore_span.innerHTML = computerScore;
 }
 
 function draw() {
@@ -38,19 +38,19 @@ function game(userChoice){
     case "rs":
     case "pr":
     case "sp":
-      win();
+      win(userChoice, computerChoice);
       break;
 
       case "rp":
       case "ps":
       case "sr":
-        lose();
+        lose(userChoice, computerChoice);
         break;
 
       case "rr":
       case "pp":
       case "ss":
-        draw();
+        draw(userChoice, computerChoice);
         break;
   }
 }             
