@@ -15,7 +15,13 @@ function getComputerChoice() {
   return choices[randomNumber];
 }
 
-console.log(getComputerChoice());
+function win() {
+  userScore++;
+}
+
+function lose() {
+  computerScore++;
+}
 
 function game(userChoice){
   const computerChoice = getComputerChoice();
@@ -32,7 +38,7 @@ function game(userChoice){
       case "sr":
         lose();
         break;
-        
+
       case "rr":
       case "pp":
       case "ss":
