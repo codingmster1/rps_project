@@ -19,6 +19,8 @@ function win(user, computer) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
+  console.log(user);
+  console.log(computer);
 }
 
 function lose() {
