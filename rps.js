@@ -29,14 +29,14 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_div.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You Won!";
+  result_div.innerHTML = convertToWord(userChoice) + " Beats " + convertToWord(computerChoice) + ". You Won!";
 }
 
 function lose(userChoice, computerChoice) {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   computerScore_span.innerHTML = computerScore;
-  result_div.innerHTML = convertToWord(userChoice) + " loses to " + convertToWord(computerChoice) + ". You Lost!";
+  result_div.innerHTML = convertToWord(userChoice) + " Loses To " + convertToWord(computerChoice) + ". You Lost!";
 }
 
 function draw(userChoice, computerChoice) {
