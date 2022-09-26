@@ -3,6 +3,7 @@ let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
+const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
@@ -15,27 +16,38 @@ function getComputerChoice() {
   return choices[randomNumber];
 }
 
-function win(user, computer) {
+
+function convertToWord(letter) {
+if (letter === "r") return "Rock";
+if (letter === "p") return "Paper";
+return "Scissors";
+
+}
+
+
+function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  console.log(user);
-  console.log(computer);
+  result_div.innerHTML = convertToWord(userChoice) + "beats" + convertToWord(computerChoice) + ". You Win!";
 }
 
-function lose() {
+function lose(userChoice, computerChoice) {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   computerScore_span.innerHTML = computerScore;
+  result_div.innerHTML = computerChoice + "beats" + userChoice + ". You Lose!";
 }
 
-function draw() {
+function draw(userChoice, computerChoice) {
+  computerScore++;
+  userScore++;
+
   console.log("draw");
 }
 
 function game(userChoice){
   const computerChoice = getComputerChoice();
-  console.log(computerChoice);
   switch(userChoice + computerChoice){
     case "rs":
     case "pr":
