@@ -20,7 +20,7 @@ function getComputerChoice() {
 function convertToWord(letter) {
 if (letter === "r") return "Rock";
 if (letter === "p") return "Paper";
-return "Scissors";
+if (letter === "s") return "Scissors";
 
 }
 
@@ -29,14 +29,14 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_div.innerHTML = convertToWord(userChoice) + "beats" + convertToWord(computerChoice) + ". You Win!";
+  result_div.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You Won!";
 }
 
 function lose(userChoice, computerChoice) {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   computerScore_span.innerHTML = computerScore;
-  result_div.innerHTML = computerChoice + "beats" + userChoice + ". You Lose!";
+  result_div.innerHTML = convertToWord(userChoice) + " loses to " + convertToWord(computerChoice) + ". You Lost!";
 }
 
 function draw(userChoice, computerChoice) {
