@@ -34,16 +34,17 @@ function win(userChoice, computerChoice) {
 
 function lose(userChoice, computerChoice) {
   computerScore++;
-  computerScore_span.innerHTML = computerScore;
+  userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_div.innerHTML = convertToWord(userChoice) + " Loses To " + convertToWord(computerChoice) + ". You Lost!";
 }
 
 function draw(userChoice, computerChoice) {
-  computerScore++;
   userScore++;
-
-  console.log("draw");
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+  result_p.innerHTML = convertToWord(userChoice) + " Is Equal To " + convertToWord(computerChoice) + ". It's A Draw!";
+  
 }
 
 function game(userChoice){
