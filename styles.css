@@ -19,6 +19,22 @@ body
     
 }
 
+button
+{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+   
+}
+
+.button
+{
+    
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
 .choices
 {
     display:flex;
