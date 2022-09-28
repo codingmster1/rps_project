@@ -40,7 +40,7 @@ function lose(userChoice, computerChoice) {
 }
 
 function draw(userChoice, computerChoice) {
-  result_div.innerHTML = convertToWord(userChoice) + convertToWord(computerChoice) + ". It's A Draw!";
+  result_div.innerHTML = convertToWord(userChoice) + " Is Equal To "+ convertToWord(computerChoice) + ". It's A Draw!";
   
 }
 
