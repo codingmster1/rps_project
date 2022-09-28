@@ -1,2 +1,2 @@
 # rps_project
-Rock Paper Scissors Project. Hello Odin!
+Rock Paper Scissors Game Application Project. Hello Odin!
