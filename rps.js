@@ -29,11 +29,16 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
+
+  if (userScore < 6){
   result_div.innerHTML = convertToWord(userChoice) + " Beats " + convertToWord(computerChoice) + ". You Won!";
+  } else if (userScore === 6) {
+ result_div.innerHTML = "Game Over! You Win! Press Restart.";
+ endGame();
+ restartScores();
+ restartGame();
 
- 
-
- 
+  };
 }
 
 
@@ -41,7 +46,15 @@ function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
+  
+  if (computerScore < 6) {
   result_div.innerHTML = convertToWord(userChoice) + " Loses To " + convertToWord(computerChoice) + ". You Lost!";
+  } else if (computerScore === 6) {
+    result_div.innerHTML = "Game Over! You Lost! Press Restart."
+    endGame();
+    restartScores();
+    restartGame();
+  };
 }
 
 
@@ -49,6 +62,7 @@ function draw(userChoice, computerChoice) {
   result_div.innerHTML = convertToWord(userChoice) + " Is Equal To "+ convertToWord(computerChoice) + ". It's A Draw!";
   
 }
+
 
 function game(userChoice){
   const computerChoice = getComputerChoice();
@@ -72,6 +86,27 @@ function game(userChoice){
         break;
   }
 }       
+
+function endGame() {
+  rock_div.disabled = true;
+  paper_div.disabled = true;
+  scissors_div.disabled = true;
+}
+
+function restartGame() {
+  restartScores();
+  rock_div.disabled = false;
+  paper_div.disabled = false;
+  scissors_div.disabled = false;
+}
+
+function restartScores() {
+  userScore = 0;
+  computerScore = 0;
+  userScore_span.innerHTML = userScore;
+  compScore_span.innerHTML = compScore;
+}
+
 
 
 
