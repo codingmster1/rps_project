@@ -30,9 +30,9 @@ function win(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 
-  if (userScore < 6){
+  if (userScore < 7){
   result_div.innerHTML = convertToWord(userChoice) + " Beats " + convertToWord(computerChoice) + ". You Won!";
-  } else if (userScore === 6) {
+  } else if (userScore === 7) {
  result_div.innerHTML = "Game Over! You Win! Press Restart.";
  endGame();
  restartScores();
@@ -47,9 +47,9 @@ function lose(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   
-  if (computerScore < 6) {
+  if (computerScore < 7) {
   result_div.innerHTML = convertToWord(userChoice) + " Loses To " + convertToWord(computerChoice) + ". You Lost!";
-  } else if (computerScore === 6) {
+  } else if (computerScore === 7) {
     result_div.innerHTML = "Game Over! You Lost! Press Restart."
     endGame();
     restartScores();
@@ -104,7 +104,7 @@ function restartScores() {
   userScore = 0;
   computerScore = 0;
   userScore_span.innerHTML = userScore;
-  computerScore_span.innerHTML = compScore;
+  computerScore_span.innerHTML = computerScore;
 }
 
 
