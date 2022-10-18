@@ -104,7 +104,7 @@ function restartScores() {
   userScore = 0;
   computerScore = 0;
   userScore_span.innerHTML = userScore;
-  compScore_span.innerHTML = compScore;
+  computerScore_span.innerHTML = compScore;
 }
 
 
